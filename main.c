@@ -1,9 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+/*Ramon Alberto Zapata Cruz matricula 1848881*/
 int main() {
-	printf("Hola mundo");
-	return 0;
+    int i, j, cont=0, n;
+    
+    do{
+        printf("Ingrese un numero menor a 100: ");
+        scanf("%d",&n);
+    }while(n<1 || n>100);
+    
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            if(i%j==0) cont=cont+1;
+        }
+        if(cont==2) printf("\n%d", i);
+        cont=0;
+
+    }
+    return 0;
 }
