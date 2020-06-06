@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//Ramon Alberto Zapata Cruz	Matricula:1848881
 int main()
 {
 	int n1,n2,i;
